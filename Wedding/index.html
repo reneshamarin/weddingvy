@@ -558,46 +558,28 @@
                                 <div class="front"><img src="./Inlove - Beautiful &amp; Awesome Wedding Template._files/couple.png" alt="images"></div>
                                 <div class="back">
                                     <div class="content">
-                                        <h3>In your absence</h3>
-                                        <p>You have gone a long distance
-                                            From our broken door,
-                                            But from morning till midnight
-                                            We miss you so more.
-                                            When we stay alone in home
-                                            Then cry for you!
-                                            We close our eyes &amp; in mind
-                                            Floats your known view.
-                                            Tear drops come from eyes
-                                            Filling mind with pain,
-                                            Memory of my little angle comes
-                                            Again &amp; again.
-                                            But we become so happy
-                                            Thinking your new joy,
-                                            So pray to Almighty
-                                            For our little toy!
+                                        <h3>Come and have fun!</h3>
+                                        <p>Because you have believed in us,
+                                            celebrated with us,
+                                            loved and encouraged us, we
+                                            request the pleasure of your company
+                                            at our wedding. Please join us
+                                            for a celebration of love, friendship,
+                                            laughter, and family!
                                         </p>
                                     </div> 
                                 </div> 
 
                                 <div class="opened">
                                     <div class="content">
-                                        <h3>In your absence</h3>
-                                        <p>You have gone a long distance
-                                            From our broken door,
-                                            But from morning till midnight
-                                            We miss you so more.
-                                            When we stay alone in home
-                                            Then cry for you!
-                                            We close our eyes &amp; in mind
-                                            Floats your known view.
-                                            Tear drops come from eyes
-                                            Filling mind with pain,
-                                            Memory of my little angle comes
-                                            Again &amp; again.
-                                            But we become so happy
-                                            Thinking your new joy,
-                                            So pray to Almighty
-                                            For our little toy!
+                                        <h3>Come and have fun!</h3>
+                                        <p>Because you have believed in us,
+                                            celebrated with us,
+                                            loved and encouraged us, we
+                                            request the pleasure of your company
+                                            at our wedding. Please join us
+                                            for a celebration of love, friendship,
+                                            laughter, and family!
                                         </p>
                                     </div> 
                                     <div class="close"></div>
@@ -684,6 +666,58 @@
                     }
                 );
             });
+            $('.button').click(function() {
+			$(this).hide();
+			$('.front').addClass('front-open');
+			$('.back').addClass('back-open');
+			$('.opened').addClass('opened-open');
+			$('.modal').show();
+
+			setTimeout(function() {
+				$('.modal').addClass('shadow');
+			}, 1000);
+
+			setTimeout(function() {
+				$('.front').removeClass('front-open');
+				$('.back').removeClass('back-open');
+				$('.opened').removeClass('opened-open');
+			}, 1200);
+
+			$('.wrapper').delay(500).fadeIn();
+			});
+
+
+			$('.close').click(function() {
+		  	$('.wrapper').fadeOut(300);
+		  	$('.modal').removeClass('shadow');
+		  	$('.front').addClass('front-close');
+		  	$('.back').addClass('back-close');
+		  	$('.opened').addClass('opened-close');
+
+		  		setTimeout(function() {
+			    	$('.modal').hide();
+			    	$('.button').show();
+			    	$('.front').removeClass('front-close');
+			    	$('.back').removeClass('back-close');
+			    	$('.opened').removeClass('opened-close');
+			  	}, 1100)
+			})
+
+
+			$('.wrapper').click(function() {
+		  	$('.wrapper').fadeOut(300);
+		  	$('.modal').removeClass('shadow');
+		  	$('.front').addClass('front-close');
+		  	$('.back').addClass('back-close');
+		  	$('.opened').addClass('opened-close');
+			  	setTimeout(function() {
+				    $('.modal').hide();
+				    $('.button').show();
+				    $('.front').removeClass('front-close');
+				    $('.back').removeClass('back-close');
+				    $('.opened').removeClass('opened-close');
+			  	}, 1100)
+			})
         </script>
 
 
