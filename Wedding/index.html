@@ -517,7 +517,7 @@
 
                                                 <div class="tab-diagram text-center">
                                                     <h4>Wedding</h4>
-                                                    <a href="#home" aria-controls="home" role="tab" data-toggle="tab">Read more</a>
+                                                    <a href="#home" onclick="if(isMobile()) $(window).scrollTop(5000);" aria-controls="home" role="tab" data-toggle="tab">Read more</a>
                                                 </div> <!-- tab-diagram -->
                                             </div> <!-- tab-caption -->
                                         </li>
@@ -528,7 +528,7 @@
 
                                                 <div class="tab-diagram text-center">
                                                     <h4>Reception</h4>
-                                                    <a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Read more</a>
+                                                    <a href="#profile" onclick="if(isMobile()) $(window).scrollTop(5000);" aria-controls="profile" role="tab" data-toggle="tab">Read more</a>
                                                 </div> <!-- tab-diagram -->
                                             </div> <!-- tab-caption -->
                                         </li>
@@ -659,6 +659,10 @@
         <script src="./Inlove - Beautiful &amp; Awesome Wedding Template._files/main.js.download"></script>     
 
         <script>
+            function isMobile() {
+                try{ document.createEvent("TouchEvent"); return true; }
+                catch(e){ return false; }
+            }
             $(function () {
                 var fenway = [12.948067,80.185501];
 

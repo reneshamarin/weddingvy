@@ -1955,7 +1955,7 @@ button,
       z-index: 5; }
       @media (max-width: 991px) {
         .event-section .event-part-one .event-left-bar .section-title {
-          bottom: -610px; } }
+         bottom: -526px; } }
       .event-section .event-part-one .event-left-bar .section-title h2 {
         color: #FFFFFF;
         text-shadow: none !important;
